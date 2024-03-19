@@ -9,7 +9,7 @@ const Hero = () => {
         Shorten Your Loooong Links :)
       </div>
       <div className="text-sm font-extralight text-[#C9CED6] whitespace-pre-wrap text-center mt-2 mb-8">
-        Shortie is an efficient and easy-to-use URL shortening service <br />
+        Shortify is an efficient and easy-to-use URL shortening service <br />
         that streamlines your online experience.
       </div>
       <InputBox user={null} />

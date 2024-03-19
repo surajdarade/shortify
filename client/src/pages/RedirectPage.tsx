@@ -39,7 +39,7 @@ const RedirectPage = () => {
     const res = await axios
       .post(`${import.meta.env.VITE_APP_BACKEND_URL}/api/urls/check/pass`, {
         pass: password,
-        shortie: shortUrl,
+        shortify: shortUrl,
       })
       .then((response) => {
         return response.data.data;

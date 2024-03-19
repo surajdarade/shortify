@@ -97,7 +97,7 @@ const CreateDialog = ({ createModal, handleOpenCreate }: Props) => {
             <div className="text-[#C9CED6]">{home}</div>
             <Input
               color="blue"
-              label="Custom shortie"
+              label="Custom shortify"
               className="text-[#fff]"
               value={shortify}
               onChange={(e) => setShortify(e.target.value)} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined}            />

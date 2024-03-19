@@ -53,7 +53,7 @@ const Home = ({ user }: Props) => {
       .replace("image/png", "image/octet-stream");
     const downloadLink = document.createElement("a");
     downloadLink.href = pngUrl;
-    downloadLink.download = "shortie_url.png";
+    downloadLink.download = "shortify_url.png";
     document.body.appendChild(downloadLink);
     downloadLink.click();
     document.body.removeChild(downloadLink);

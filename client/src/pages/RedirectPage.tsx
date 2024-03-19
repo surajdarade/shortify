@@ -14,7 +14,7 @@ const RedirectPage = () => {
 
   const fetchOriginalUrl = async () => {
     const res = await axios
-      .get(`http://localhost:4000/api/urls/${shortUrl}`)
+      .get(`https://shortify-server-surajdarade.vercel.app/api/urls/${shortUrl}`)
       .then((response) => {
         return response.data.data;
       })
@@ -37,7 +37,7 @@ const RedirectPage = () => {
 
   const onPasswordSubmit = async () => {
     const res = await axios
-      .post(`http://localhost:4000/api/urls/check/pass`, {
+      .post(`${import.meta.env.VITE_APP_BACKEND_URL}/api/urls/check/pass`, {
         pass: password,
         shortie: shortUrl,
       })

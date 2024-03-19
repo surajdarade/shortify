@@ -36,7 +36,7 @@ const CreateDialog = ({ createModal, handleOpenCreate }: Props) => {
 
     await axios
       .post(
-        `http://localhost:4000/api/urls`,
+        `${import.meta.env.VITE_APP_BACKEND_URL}/api/urls`,
         {
           uid: user?.id,
           longUrl: createUrl,

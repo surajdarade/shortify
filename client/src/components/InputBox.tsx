@@ -19,7 +19,7 @@ const InputBox = ({ user }: Props) => {
     setCreateUrl(url);
     setCreateModal(true);
     // await axios
-    //   .post(`http://localhost:4000/api/urls`, {
+    //   .post(`${import.meta.env.VITE_APP_BACKEND_URL}/api/urls`, {
     //     uid: user?.id,
     //     longUrl: url,
     //   })

@@ -29,7 +29,7 @@ const Home = ({ user }: Props) => {
   const [qrUrl, setQrUrl] = useState("");
 
   const onDelete = async () => {
-    await fetch(`http://localhost:4000/api/urls/${delId}`, {
+    await fetch(`${import.meta.env.VITE_APP_BACKEND_URL}/api/urls/${delId}`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${user?.token}`,

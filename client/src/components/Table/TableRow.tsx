@@ -31,7 +31,7 @@ const TableRow = ({ url, onDelete, onQr, token }: Props) => {
   const { fetchUrls, showNotification } = useAppContext();
 
   const toggleActive = async () => {
-    fetch(`http://localhost:4000/api/urls/${url._id}`, {
+    fetch(`${import.meta.env.VITE_APP_BACKEND_URL}/api/urls/${url._id}`, {
       method: "PATCH",
       headers: {
         authorization: `Bearer ${token}`,
@@ -50,7 +50,7 @@ const TableRow = ({ url, onDelete, onQr, token }: Props) => {
   };
 
   // const onDelete = async () => {
-  //   await fetch(`http://localhost:4000/api/urls/${url._id}`, {
+  //   await fetch(`https://shortify-server-surajdarade.vercel.app/api/urls/${url._id}`, {
   //     method: "DELETE",
   //   });
   //   await fetchUrls(url.user);

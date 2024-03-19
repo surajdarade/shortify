@@ -45,7 +45,7 @@ export function AppContextProvider({ children }: any) {
   const fetchUrls = async (token: string) => {
     setUrls([]);
     const res = await axios
-      .get(`http://localhost:4000/api/urls`, {
+      .get(`${import.meta.env.VITE_APP_BACKEND_URL}/api/urls`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

@@ -9,7 +9,7 @@ type Props = {
 };
 
 const InputBox = ({ user }: Props) => {
-  const { fetchUrls, showNotification, setCreateModal, setCreateUrl } =
+  const { showNotification, setCreateModal, setCreateUrl } =
     useAppContext();
   const [url, seturl] = useState<string>("");
 

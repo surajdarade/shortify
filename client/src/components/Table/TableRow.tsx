@@ -40,7 +40,7 @@ const TableRow = ({ url, onDelete, onQr, token }: Props) => {
         isActive: !url.isActive,
       }),
     })
-      .then(async (res) => {
+      .then(async () => {
         await fetchUrls(token);
         showNotification(
           `URL ${url.isActive ? "deactivated" : "activated"} successfully!`

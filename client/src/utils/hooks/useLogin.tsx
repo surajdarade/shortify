@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from "react";
 import { useAuthContext } from "./useAuthContext";
 import jwt_decode from "jwt-decode";

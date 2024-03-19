@@ -49,7 +49,7 @@ const CreateDialog = ({ createModal, handleOpenCreate }: Props) => {
           },
         }
       )
-      .then((response) => {
+      .then(() => {
         setCreateUrl("");
         showNotification("Url Shortened successfully!");
         handleOpenCreate();

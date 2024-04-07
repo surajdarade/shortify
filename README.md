@@ -10,7 +10,7 @@ Shortify is a URL shortening application developed using the MERN stack (MongoDB
 
 ## Features
 
-- **OAuth Integration:** Users can sign in using OAuth authentication methods such as Google or Facebook.
+- **OAuth Integration:** Users can sign in using OAuth authentication methods Google.
 - **URL Shortening:** Convert long URLs into short, custom URLs for easy sharing.
 - **URL Management:** Users can view their saved URLs, activate/deactivate URLs, and delete unwanted URLs.
 - **QR Code Generation:** Generate QR codes for shortened URLs to facilitate easy sharing and scanning.
